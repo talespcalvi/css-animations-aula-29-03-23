@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS animations</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 250px;
+            background-color: darkred;
+            border-radius: 50%;
+            position: relative;
+
+            animation: mymove 5s infinite;
+            animation-direction: alternate;
+        }
+
+        @keyframes mymove{
+            from {top: 170px}
+            to {top: 200px}
+        
+        }
+        @keyframes mymove2 {
+            from {top: 200px;}
+            to {top: 0px}
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>
